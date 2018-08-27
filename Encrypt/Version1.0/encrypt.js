@@ -2,8 +2,8 @@ var cc1 = ["097","098","099","100","101","102","103","104","105","106","107","10
 var result = "";
 function encrypt(data){
  for(var i = 0;i<data.length;i++){
-  alert("string is "+i+" in length");
  }
+ alert("string is "+i+" in length");
 }
 var ec = new Object;
 ec.e = function(id){
