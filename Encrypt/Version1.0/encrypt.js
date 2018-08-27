@@ -3,7 +3,7 @@ var result = "";
 function encrypt(data){
  alert(data + " is the string");
 }
-var EC = new Object;
+var ec = new Object;
 EC.e = function(id){
  var node = document.getElementById(id).nodeName;
  alert("The element tag is "+node);
