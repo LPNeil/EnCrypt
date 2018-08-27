@@ -1,4 +1,5 @@
 var cc1 = ["097","098","099","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122"];
+var dcc1 = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var result = "";
 function encrypt(data){
  for(var i = 0;i<data.length;i++){
@@ -31,11 +32,28 @@ function encrypt(data){
  }
  return result;
 }
+function decrypt(data){
+ for(var i = 0;i<data.length;i++){
+  var code = i / 3;
+  result = code;
+ }
+ return result;
+}
 var ec = new Object;
 ec.e = function(id){
  var node = document.getElementById(id).nodeName;
  if(node=="INPUT"){
   encrypt(document.getElementById(id).value);
   alert("Encryption equals "+result);
+ }
+};
+ec  function(id){
+ var node = document.getElementById(id).nodeName;
+ if(node=="INPUT"){
+  decrypt(document.getElementById(id).value);
+  alert("Decryption equals "+ result);
+ }else{
+  decrypt(document.getElementById(id).innerHTML);
+  alert("Decryption equals "+ result);
  }
 };
