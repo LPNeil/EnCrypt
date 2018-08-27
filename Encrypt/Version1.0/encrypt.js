@@ -54,6 +54,16 @@ function encrypt{string){
   if(string[i]=="X"){result += ecc[49];}
   if(string[i]=="Y"){result += ecc[50];}
   if(string[i]=="Z"){result += ecc[51];}
+  if(string[i]=="0"){result += ecc[52];}
+  if(string[i]=="1"){result += ecc[53];}
+  if(string[i]=="2"){result += ecc[54];}
+  if(string[i]=="3"){result += ecc[55];}
+  if(string[i]=="4"){result += ecc[56];}
+  if(string[i]=="5"){result += ecc[57];}
+  if(string[i]=="6"){result += ecc[58];}
+  if(string[i]=="7"){result += ecc[59];}
+  if(string[i]=="8"){result += ecc[60];}
+  if(string[i]=="9"){result += ecc[61];}
  }
 }
 var EC = {
