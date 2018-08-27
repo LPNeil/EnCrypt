@@ -35,7 +35,7 @@ function encrypt(data){
 function decrypt(data){
  for(var i = 0;i<data.length;i++){
   var code = i/3;
-  result = code;
+  result = i;
  }
  return result;
 }
