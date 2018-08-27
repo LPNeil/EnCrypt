@@ -6,5 +6,7 @@ function encrypt(data){
 var ec = new Object;
 ec.e = function(id){
  var node = document.getElementById(id).nodeName;
- alert("The element tag is "+node);
+ if(node=="INPUT"){
+  encrypt(document.getElementById(id).value);
+ }
 };
