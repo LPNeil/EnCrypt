@@ -3,12 +3,8 @@ var result = "":
 function encrypt(data){
  alert(data + " is the string");
 }
-var EC = {
- e: function(id,out){
-  var node = document.getElementById(id).nodeType;
-  if(node=="INPUT"){
-   var nVal = document.getElementById(id).value;
-   encrypt(nVal);
-  }
- }
+var EC = new Object;
+EC.e = function(id){
+ var node = document.getElementById(id).nodeName;
+ alert("The element tag is "+node);
 };
