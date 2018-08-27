@@ -4,7 +4,7 @@ function encrypt(data){
  alert(data + " is the string");
 }
 var ec = new Object;
-EC.e = function(id){
+ec.e = function(id){
  var node = document.getElementById(id).nodeName;
  alert("The element tag is "+node);
 };
