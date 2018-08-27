@@ -29,12 +29,13 @@ function encrypt(data){
   if(data[i]=="Y"){result += cc1[24];}
   if(data[i]=="Z"){result += cc1[25];}
  }
- 
+ return result;
 }
 var ec = new Object;
 ec.e = function(id){
  var node = document.getElementById(id).nodeName;
  if(node=="INPUT"){
   encrypt(document.getElementById(id).value);
+  alert("Encryption equals "+result);
  }
 };
