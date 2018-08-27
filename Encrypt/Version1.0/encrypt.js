@@ -47,7 +47,7 @@ ec.e = function(id){
   decrypt(result);
  }
 };
-ec  function(id){
+ec.d function(id){
  var node = document.getElementById(id).nodeName;
  if(node=="INPUT"){
   decrypt(document.getElementById(id).value);
